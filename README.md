@@ -1,3 +1,3 @@
-# Practcing C and remembering something from college
+# Practicing C
 
 A bunch of C code just for practice purposes
