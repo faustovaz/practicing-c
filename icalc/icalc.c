@@ -121,11 +121,15 @@ void eval(char *expr){
 }
 
 int main(int argc, char *argv[]){
+  char *expr;
+
   while(TRUE){
-    char *expr = read_expr();
+    expr = read_expr();
     if (strcmp(STOP, expr) == 0){
+      free(expr);
       return 0;
     }
     eval(expr);
+    free(expr);
   }
 }
